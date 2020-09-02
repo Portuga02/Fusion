@@ -42,6 +42,6 @@ FEITO EM VUE.JS E UTILIZANDO O NPM COMO SEU SERVIDOR LOCAL PARA SE UTILIZAR O SI
   <p> Assim que instalado ele irá acessar localhost:8080 e  mostrar o todolist feito em vue.js <p>
   
    * npm install (utilizado para instalar o npm no computaor)
-   * npm run server  (utilizado para statar o server)
+   * npm run serve (utilizado para statar o server)
    * npm i (utilizado para instalar pacotes )
   
