@@ -4,12 +4,12 @@
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 3px;
-	text-decoration: none;
-}
-a{
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
 
 body {
     font-size: 13px;
@@ -19,6 +19,9 @@ table {
     font-size: 14px;
     text-decoration: none;
 }
+
+button {
+    text-decoration: none;
 }
 
 #botoesBaixo {

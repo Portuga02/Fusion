@@ -13,32 +13,27 @@
     <body>
         <div class="container">
 
-            <h4 class="display-4 text-center">Editar Registro de caminhoneiro</h4>
-            <div class="col col-xs-12">
+            <h4 class="display-4 text-center">Adicionar novo caminhoneiro</h4>
+                <div class="col col-xs-12">
 
-                <form method="POST">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Nome completo</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Digite seu nome completo" name="nome" aria-label="Username" aria-describedby="basic-addon1"  value="<?php echo $info['nome']; ?>">
+                <form method="POST" >
+                    <div class="form-group ">
+                        <h5> <label> Nome  do caminhoneiro</label></h5>
+                        <input class="form-control form-control-lg" type="text" name="nome" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group ">
+                        <h5>  <label> CPF caminhoneiro</label> </h5>
+
+                        <input class="form-control form-control-lg" type="text" name="cpf" placeholder="Digite o CPF  (apenas numeros)">
                     </div>
 
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon2">E-mail</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Endereço de E-mail" name="email" aria-label="Username" aria-describedby="basic-addon1" value=" <?php echo $info['email']; ?>">
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class=" input-group-prepend form-control-control-lg">
-                            <span class="input-group-text" id="basic-addon1">Nº DE CPF</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Username"  name="cpf" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="form-group ">
+                        <h5><label> E-mail do caminhoneiro</label></h5>
+                        <input class="form-control form-control-lg" type="email" name="email" placeholder="Digite seu melhor email para cadastro">
                     </div>
 
                     <div class="form-group">
-                        <label >Situação do caminhoneiro*</label>
+                        <h5><label >Situação*</label> </h5>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="situacao" id="exampleRadios1" value="livre">
                             <label class="form-check-label" for="exampleRadios1">
@@ -58,14 +53,15 @@
                             </label>
                         </div>
                     </div>
-                    <select class="custom-select" value="status">
-                        <option selected> Seleciona um Status para o caminhoneiro</option>
-                        <option value="1">Ativo</option>
-                        <option value="2"> Inativo</option>
+                    <h5> <label>Selecionar um Status para o caminhoneiro</label> </h5>
+                    <select class="custom-select" value="status" name="status"> 
+
+                        <option value="ativo">Ativo</option>
+                        <option value="Inativo"> Inativo</option>
 
                     </select>
                     <div class="col-xs-12">
-                        <button id="botoesBaixo" class="btn btn-dark" id="botoes" value="Adicionar"> Cadastrar</button>
+                    <input class="btn btn-dark"  class="form-check-input" type="submit" value="Salvar" />
                     </div>
                 </form>
                 <br>

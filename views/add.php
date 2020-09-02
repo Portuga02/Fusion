@@ -43,7 +43,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="situacao" id="exampleRadios1" value="livre">
                             <label class="form-check-label" for="exampleRadios1">
-                                Livre
+                               LIVRE
                             </label>
                         </div>
                         <div class="form-check">
@@ -59,11 +59,11 @@
                             </label>
                         </div>
                     </div>
-                    <h5> <label>Seleciona um Status para o caminhoneiro</label> </h5>
+                    <h5> <label>Selecionar um Status para o caminhoneiro</label> </h5>
                     <select class="custom-select" value="status" name="status"> 
 
-                        <option value="1">Ativo</option>
-                        <option value="2"> Inativo</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="Inativo"> Inativo</option>
 
                     </select>
                     <div class="col-xs-12">

@@ -53,13 +53,15 @@ class UsersModels extends model
 
     public function edit($nome, $cpf, $email, $situacao, $status, $id)
     {
-        $sql = "UPDATE users SET nome = :nome, cpf = :cpf, email = :email, situacao =:situacao, status =:status WHERE id = :id";
+        $sql = "UPDATE users SET nome = :nome, cpf = :cpf, email = :email, situacao = :situacao, status = :status WHERE id = :id";
         $sql = $this->db->prepare($sql);
+      
         $sql->bindValue(':nome', $nome);
         $sql->bindValue(':cpf', $cpf);
         $sql->bindValue(':email', $email);
         $sql->bindValue(':situacao', $situacao);
         $sql->bindValue(':status', $status);
+        $sql->bindValue(':id', $id);
         $sql->execute();
     }
 
