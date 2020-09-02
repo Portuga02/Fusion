@@ -7,24 +7,26 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fusion</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="../assets/css/config.css">
+        
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/config.css" />
+        <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/config.js"></script>
     </head>
 
     <body>
         <div class="container">
 
-            <h4 class="display-4 text-center">Adicionar novo caminhoneiro</h4>
+            <h4 class="display-4 text-center">Editar Caminhoneiros</h4>
                 <div class="col col-xs-12">
 
-                <form method="POST" >
+                <form method="POST">
                     <div class="form-group ">
                         <h5> <label> Nome  do caminhoneiro</label></h5>
-                        <input class="form-control form-control-lg" type="text" name="nome" placeholder="Digite seu nome completo">
+                        <input  onKeyPress="return bloqueiaNumero(event);"  class="form-control form-control-lg" type="text"  name="nome" placeholder="Digite seu nome completo">
                     </div>
                     <div class="form-group ">
                         <h5>  <label> CPF caminhoneiro</label> </h5>
 
-                        <input class="form-control form-control-lg" type="text" name="cpf" placeholder="Digite o CPF  (apenas numeros)">
+                        <input class="form-control form-control-lg" type="text" name="cpf"   onkeydown="javascript: fMasc( this, mCPF );"  maxlength="14" placeholder="Digite o CPF  (apenas numeros)">
                     </div>
 
                     <div class="form-group ">
@@ -37,7 +39,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="situacao" id="exampleRadios1" value="livre">
                             <label class="form-check-label" for="exampleRadios1">
-                                Livre
+                               LIVRE
                             </label>
                         </div>
                         <div class="form-check">
@@ -61,7 +63,7 @@
 
                     </select>
                     <div class="col-xs-12">
-                    <input class="btn btn-dark"  class="form-check-input" type="submit" value="Salvar" />
+                        <button id="botoesBaixo" class="btn btn-dark" id="botoes" value="Adicionar"> Cadastrar</button>
                     </div>
                 </form>
                 <br>

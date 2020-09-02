@@ -1,4 +1,4 @@
-// iniciando configurações para filtar  dentro dos inputs apenas letras e caracateres
+//  INICICIANDO FUNÇÕES ESPECIFICAS PARA BLOQUEAR NUMEROS EM CAMPOS DE QUE SE UTILIZA APENAS TEXTOS
 function bloqueiaNumero(texto) {
     var tecla = new String();
 

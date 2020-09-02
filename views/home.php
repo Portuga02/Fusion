@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/config.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/config.css" />
+        <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/config.js"></script>
     <title>Fusion</title>
 </head>
 <!-- Depois de pronto colocar o botão para toldo List-->
@@ -31,7 +33,7 @@
                         <th scope="col-xs-1"> Status</th>
                         
                         <!-- <th scope="col-xs-1"colspan="2"> Anotações </th> -->
-                        <th scope="col-xs-1"  colspan="3"> Ações</th
+                        <th scope="col-xs-1" class="text-center" colspan="3"> Ações</th
                     </div>
                 </tr>
 
@@ -49,34 +51,19 @@
                 <td><?php echo $item['situacao']; ?></td>
                 <td><?php echo $item['status']; ?></td>
             </div>
-            <!-- <td>
-
-            <!-- <div class="btn-group" role="group" aria-label="Exemplo básico">
-                <button type="button" class="btn btn-secondary">Esquerda</button>
-                <button type="button" class="btn btn-secondary" window.location.href="<?php echo BASE_URL; ?>">Editar</button>
-                <button type="button" class="btn btn-secondary"> <a href=" <?php echo BASE_URL; ?>users/del/<?php echo $item['id']; ?>" onclick=" return confirm('Tem certeza que deseja excluir este registro?')">Deletar</a></button>
-            </div>
-        </td> -->
-            <td> 
-                <button id="botoes" class="btn btn-dark"><a href="views/anotacoes.php"> Anotações</a> </button> <br><br>
-            </td>
-                <td>
-                <button id="botoes" class="btn btn-dark"><a
-                        href=" <?php echo BASE_URL; ?>users/edit/<?php echo $item['id']; ?>"
-                        onclick=" return confirm('Tem certeza que deseja editar este registro?')">Editar
-                        Usuário</a></button>
             <td>
-                <button id="botoes" class="btn btn-dark"><a
-                        href=" <?php echo BASE_URL; ?>users/del/<?php echo $item['id']; ?>"
-                        onclick=" return confirm('Tem certeza que deseja excluir este registro?')">Excluir Usuário</a>
-                </button>
+            <div class="btn-group" role="group" aria-label="Grupo de botões com dropdown aninhado">
+                  <button type="button" class="btn btn-primary" role="group">Lista de tarefas</button>
+                <button type="button" class="btn btn-danger" window.location.href="<?php echo BASE_URL; ?>">Editar</button>
+                <button type="button" class="btn btn-dark"> <a href=" <?php echo BASE_URL; ?>users/del/<?php echo $item['id']; ?>" onclick=" return confirm('Tem certeza que deseja excluir este registro?')">Deletar</a></button>
+            </div>
             </td>
-            </td>
+            
         </tr> <?php endforeach; ?>
     </tbody>
     </table>
 
-    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
