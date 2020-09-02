@@ -2,7 +2,7 @@
 
 <p>Sistema onde o usuário pode ver criar atividades para os caminhoneiros vigentes cadastrados na emmpresa
 sabendo se estão ativos e se estão disponiveis ou indisponiveis para o trabalho no momento. O sistema conta com a arquitetura mvc em seu corpo ,
-e construido em linguagem orientada a objetos e utilizando frameworks para o seu front-end e sistemas exttras </p>
+e construido em linguagem orientada a objetos e utilizando frameworks para o seu front-end e sistemas exttras 
 
 <i>FOI CRIADO UM SISTEMA DE LISTA DE ATIVIDADE (TODOLIST)</i>
 FEITO EM VUE.JS E UTILIZANDO O NPM COMO SEU SERVIDOR LOCAL PARA SE UTILIZAR O SISTEMA.</p>
