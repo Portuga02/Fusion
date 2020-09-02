@@ -21,23 +21,23 @@
                 <form method="POST">
                     <div class="form-group ">
                         <h5> <label> Nome  do caminhoneiro</label></h5>
-                        <input  onKeyPress="return bloqueiaNumero(event);"  class="form-control form-control-lg" type="text"  name="nome" placeholder="Digite seu nome completo">
+                        <input  onKeyPress="return bloqueiaNumero(event);"  class="form-control form-control-lg" type="text"  name="nome" placeholder="Digite seu nome completo" value="<?php echo $info['nome']; ?>">
                     </div>
                     <div class="form-group ">
                         <h5>  <label> CPF caminhoneiro</label> </h5>
 
-                        <input class="form-control form-control-lg" type="text" name="cpf"   onkeydown="javascript: fMasc( this, mCPF );"  maxlength="14" placeholder="Digite o CPF  (apenas numeros)">
+                        <input class="form-control form-control-lg" type="text" name="cpf"   onkeydown="javascript: fMasc( this, mCPF );"  maxlength="14" placeholder="Digite o CPF  (apenas numeros)" value="<?php echo $info['cpf'];?>">
                     </div>
 
                     <div class="form-group ">
                         <h5><label> E-mail do caminhoneiro</label></h5>
-                        <input class="form-control form-control-lg" type="email" name="email" placeholder="Digite seu melhor email para cadastro">
+                        <input class="form-control form-control-lg" type="email" name="email" placeholder="Digite seu melhor email para cadastro" value="<?php echo $info['email'];?>" >
                     </div>
 
                     <div class="form-group">
                         <h5><label >Situação*</label> </h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="situacao" id="exampleRadios1" value="livre">
+                            <input class="form-check-input" type="radio" name="situacao" id="exampleRadios1" value="Livre" >
                             <label class="form-check-label" for="exampleRadios1">
                                LIVRE
                             </label>
