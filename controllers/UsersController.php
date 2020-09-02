@@ -1,6 +1,6 @@
 <?php
 
-class usersController extends controller
+class UsersController extends controller
 {
     public function index()
     {
@@ -28,7 +28,7 @@ class usersController extends controller
             $situacao = addslashes($_POST['situacao']);
             $status = addslashes($_POST['status']);
 
-            $users = new Users();
+            $users = new UsersModels();
             if ($users->add($nome, $cpf, $email, $email, $situacao, $status)) {
                 header("Location: " . BASE_URL);
             } else {
@@ -47,7 +47,7 @@ class usersController extends controller
         $dados = array();
 
         if (!empty($id)) {
-            $users = new Users();
+            $users = new UsersModels();
 
             if (!empty($_POST['nome'])) {
                 $nome = addslashes($_POST['nome']);
@@ -73,7 +73,7 @@ class usersController extends controller
     public function del($id)
     {
         if (!empty($id)) {
-            $users = new Users();
+            $users = new UsersModels();
             $users->delete($id);
         }
 

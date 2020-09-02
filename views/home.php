@@ -10,9 +10,9 @@
     </head>
     <!-- Depois de pronto colocar o botão para toldo List-->
 
-    <body ">
+    <body >
         <div class=" container">
-            <button id="botoes"class="btn btn-dark"><a href="<?php echo BASE_URL; ?>contatos/add"> Adicionar Novo Usuário </a> </button> <br><br>
+            <button id="botoes"class="btn btn-dark"><a href="<?php echo BASE_URL; ?>users/add"> Adicionar Novo Usuário </a> </button> <br><br>
         </div>
         <div class="container">
             <table text="responsive" class="table table-bordered">

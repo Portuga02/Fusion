@@ -1,6 +1,6 @@
 <?php
 
-class Users extends model
+class UsersModels extends model
 {
     public function getAll()
     {

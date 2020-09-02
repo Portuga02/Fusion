@@ -1,12 +1,12 @@
 <?php
 
-class homeController extends controller
+class HomeController extends controller
 {
     public function index()
     {
         $dados = array();
 
-        $users = new Users();
+        $users = new UsersModels();
         $dados['lista'] =$users->getAll();
 
         $this->loadTemplate('home', $dados);
