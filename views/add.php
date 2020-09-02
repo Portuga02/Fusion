@@ -22,7 +22,7 @@
 
             <div class="col col-xs-12">
 
-                <form method="POST" action="<?php echo BASE_URL; ?>contatos/add_save">
+                <form method="POST" action="<?php echo BASE_URL; ?>users/add_save">
                     <div class="form-group ">
                         <h5> <label> Nome  do caminhoneiro</label></h5>
                         <input class="form-control form-control-lg" type="text" name="nome" placeholder="Digite seu nome completo">
