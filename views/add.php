@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <h5> <label>Seleciona um Status para o caminhoneiro</label> </h5>
-                    <select class="custom-select" value="status"> 
+                    <select class="custom-select" value="status" name="status"> 
 
                         <option value="1">Ativo</option>
                         <option value="2"> Inativo</option>
