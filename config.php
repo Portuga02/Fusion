@@ -4,7 +4,7 @@ require 'environment.php';
 
 $config = array();
 if (ENVIRONMENT == 'development') {
-    define("BASE_URL", "http://localhost/Fusion");
+    define("BASE_URL", "http://localhost/Fusion/");
     $config['dbname'] = 'controle_caminhoneiros';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
