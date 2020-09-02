@@ -7,7 +7,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fusion</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="../assets/css/config.css">
+         
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/config.css" />
+        <script src="<?php echo BASE_URL; ?>assets/js/config.js"></script>
     </head>
 
     <body>
@@ -25,12 +27,12 @@
                 <form method="POST" action="<?php echo BASE_URL; ?>users/add_save">
                     <div class="form-group ">
                         <h5> <label> Nome  do caminhoneiro</label></h5>
-                        <input class="form-control form-control-lg" type="text" name="nome" placeholder="Digite seu nome completo">
+                        <input  onKeyPress="return bloqueiaNumero(event);"  class="form-control form-control-lg" type="text"  name="nome" placeholder="Digite seu nome completo">
                     </div>
                     <div class="form-group ">
                         <h5>  <label> CPF caminhoneiro</label> </h5>
 
-                        <input class="form-control form-control-lg" type="text" name="cpf" placeholder="Digite o CPF  (apenas numeros)">
+                        <input class="form-control form-control-lg" type="text" name="cpf"   onkeydown="javascript: fMasc( this, mCPF );"  maxlength="14" placeholder="Digite o CPF  (apenas numeros)">
                     </div>
 
                     <div class="form-group ">
@@ -73,6 +75,8 @@
                 <br>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
