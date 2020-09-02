@@ -15,9 +15,9 @@
 
 <body>
     <div class=" container">
-        <button id="botoes" type="button" class="btn btn-dark"><a href="<?php echo BASE_URL; ?>users/add"> Adicionar
+        <button id="botoes" type="button" class="btn btn-primary"><a href="<?php echo BASE_URL; ?>users/add"> Adicionar
                 Novo Usuário </a>
-        </button> <button type="button" class="btn btn-primary" role="group"><a href="http://localhost:8080/">Lista de
+        </button> <button id="botoes" type="button" class="btn btn-primary" role="group"><a href="http://localhost:8080/">Lista de
                 tarefas
             </a></button>
 
@@ -55,7 +55,7 @@
                             Usuário</a></button>
                     <button type="button" class="btn btn-dark"> <a
                             href=" <?php echo BASE_URL; ?>users/del/<?php echo $item['id']; ?>"
-                            onclick=" return confirm('Tem certeza que deseja excluir este registro?')">Deletar</a></button>
+                            onclick=" return confirm('Tem certeza que deseja excluir este registro?')">Deletar Usuário</a></button>
                 </div>
             </td>
 

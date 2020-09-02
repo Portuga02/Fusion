@@ -37,7 +37,7 @@
 
                     <div class="form-group ">
                         <h5><label> E-mail do caminhoneiro</label></h5>
-                        <input class="form-control form-control-lg" type="email" name="email" placeholder="Digite seu melhor email para cadastro">
+                        <input  onKeyPress="return bloqueiaNumero(event);" class="form-control form-control-lg" type="email" name="email" placeholder="Digite seu melhor email para cadastro">
                     </div>
 
                     <div class="form-group">
