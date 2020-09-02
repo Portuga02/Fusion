@@ -10,6 +10,22 @@
     a:link {
         text-decoration: none;
         text-emphasis-color: black;
+        color: #FAFFFA;
+    }
+    
+    a:visited {
+        text-decoration: none;
+        color: #FAFFFA;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: rgb(10, 240, 40);
+    }
+    
+    a:active {
+        text-decoration: none;
+        color: green;
     }
     
     body {

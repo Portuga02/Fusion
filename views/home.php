@@ -9,38 +9,33 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/config.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/config.css" />
-        <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/config.js"></script>
+    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/config.js"></script>
     <title>Fusion</title>
 </head>
-<!-- Depois de pronto colocar o botão para toldo List-->
 
 <body>
     <div class=" container">
-        <button id="botoes" class="btn btn-dark"><a href="<?php echo BASE_URL; ?>users/add"> Adicionar Novo Usuário </a>
-        </button> <br><br>
+        <button id="botoes" type="button" class="btn btn-dark"><a href="<?php echo BASE_URL; ?>users/add"> Adicionar
+                Novo Usuário </a>
+        </button> <button type="button" class="btn btn-primary" role="group"><a href="http://localhost:8080/">Lista de
+                tarefas
+            </a></button>
+
     </div>
+    <br>
     <div class="container">
-        <table text="responsive" class="table table-bordered">
+        <table class="table table-striped table-dark">
             <thead class="thead-dark ">
-
                 <tr>
-                    <div class="row row-cols-1">
-
-                        <th scope="col-xs-1"> Nome funcionário</th>
-                        <th scope="col-xs-1"> CPF</th>
-                        <th scope="col-xs-1"> E-mail Cadastrado </th>
-                        <th scope="col-xs-1"> Situação</th>
-                        <th scope="col-xs-1"> Status</th>
-                        
-                        <!-- <th scope="col-xs-1"colspan="2"> Anotações </th> -->
-                        <th scope="col-xs-1" class="text-center" colspan="3"> Ações</th
-                    </div>
+                    <th scope="col-sm-1"> Nome funcionário</th>
+                    <th scope="col-sm-1"> CPF</th>
+                    <th scope="col-sm-1"> E-mail Cadastrado </th>
+                    <th scope="col-sm-1"> Situação</th>
+                    <th scope="col-sm-1"> Status</th>
+                    <th scope="col-sm-1" class="text-center" colspan="3"> Ações</th>
                 </tr>
-
             </thead>
-
     </div>
-
     <?php foreach ($lista as $item) : ?>
     <tbody>
         <tr>
@@ -52,18 +47,24 @@
                 <td><?php echo $item['status']; ?></td>
             </div>
             <td>
-            <div class="btn-group" role="group" aria-label="Grupo de botões com dropdown aninhado">
-                  <button type="button" class="btn btn-primary" role="group">Lista de tarefas</button>
-                <button type="button" class="btn btn-danger" window.location.href="<?php echo BASE_URL; ?>">Editar</button>
-                <button type="button" class="btn btn-dark"> <a href=" <?php echo BASE_URL; ?>users/del/<?php echo $item['id']; ?>" onclick=" return confirm('Tem certeza que deseja excluir este registro?')">Deletar</a></button>
-            </div>
+                <div class="btn-group" role="group" aria-label="Grupo de botões com dropdown aninhado">
+
+                    <button type="button" class="btn btn-danger"><a
+                            href=" <?php echo BASE_URL; ?>users/edit/<?php echo $item['id']; ?>"
+                            onclick=" return confirm('Tem certeza que deseja editar este registro?')">Editar
+                            Usuário</a></button>
+                    <button type="button" class="btn btn-dark"> <a
+                            href=" <?php echo BASE_URL; ?>users/del/<?php echo $item['id']; ?>"
+                            onclick=" return confirm('Tem certeza que deseja excluir este registro?')">Deletar</a></button>
+                </div>
             </td>
-            
-        </tr> <?php endforeach; ?>
+
+        </tr>
+        <?php endforeach; ?>
     </tbody>
     </table>
 
-    
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
