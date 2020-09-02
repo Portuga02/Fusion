@@ -1,44 +1,47 @@
-#SISTEMA FUSION 
+<H2>SISTEMA FUSION</H2> 
 
-Sistema onde o usuário pode ver criar atividades para os caminhoneiros vigentes cadastrados na emmpresa
-sabendo se estão ativos e se estão disponiveis ou indisponiveis para o trabalho no momento
-.
-O sistema conta com a arquitetura mvc em seu corpo , e conttruido em linguagem orientada a objetos e frameworks para o seu front-end e sistemas exttras
+<p>Sistema onde o usuário pode ver criar atividades para os caminhoneiros vigentes cadastrados na emmpresa
+sabendo se estão ativos e se estão disponiveis ou indisponiveis para o trabalho no momento. O sistema conta com a arquitetura mvc em seu corpo ,
+e construido em linguagem orientada a objetos e utilizando frameworks para o seu front-end e sistemas exttras </p>
 
-FOI CRIADO UM SISTEMA DE LISTA DE ATIVIDADE (TODOLIST)
-FEITO EM VUE.JS E UTILIZANDO O NPM COMO SEU SERVIDOR LOCAL PARA SE UTILIZAR O SISTEMA.
+<i>FOI CRIADO UM SISTEMA DE LISTA DE ATIVIDADE (TODOLIST)</i>
+FEITO EM VUE.JS E UTILIZANDO O NPM COMO SEU SERVIDOR LOCAL PARA SE UTILIZAR O SISTEMA.</p>
 
-BACK-END
+<H2>BACK-END</H2>
+  * MVC
+  * POO
+  * PDO
+  * PHP
+<H2>FRONT-END</H2>
+  * VUE.JS  
+  * JAVASCRIPT
+  * CSS 3 
+  * BOOTSTRAP 4
+  
+<H2>BANCO DE DADOS</H2>
+  * BANCO DE DADOS MYSQL
 
-MVC
-POO
-PDO
-PHP
+<H2>SOFTWARES DE USO  PARA COSNTRUÇÃO DO SISTEMA</H2>
+  * VISUAL STUDIO CODE
+  * MYSQL WORKBENCH
+  * PHPMYADMIN 
+  
+<H2>SERVIDORES</H2>
 
-FRONT-END
+* XAMPP 
+* APACHE
+* NPM
 
-VUE.JS 
-JAVASCRIPT
-CSS 3 
-BOOTSTRAP 4
+<H2>VERSÕES PHP</H2>
+ 
+ * PHP NA VERSÃO 7.4
 
-BANCO DE DADOS
-
-FOI UTILIZADO UMA BASE DE DADOS PARA ARMAZENAMENTO DE DADOS
-UTILIZADO O BANCO DE DADOS MYSQL
-
-SOFTWARES DE USO
-VISUAL STUDIO CODE
-MYSQL WORKBENCH
-PHPMYADMIN 
-
-
-SERVIDORES
-
-XAMPP 
-APACHE
-NPM
-
-VERSÕES PHP
-PHP NA VERSÃO 7.4
-
+ <p> Para inicar o todolist que foi implemetado no sistema, se deve ter instalado o npm  em sua maquina, assim que tiver instalado o servidor 
+  basta acessar a pasta tarefa e iniciar o servidor com  os comandos a seguir  </p>
+  
+  <p> Assim que instalado ele irá acessar localhost:8080 e  mostrar o todolist feito em vue.js <p>
+  
+   * npm install (utilizado para instalar o npm no computaor)
+   * npm run server  (utilizado para statar o server)
+   * npm i (utilizado para instalar pacotes )
+  
