@@ -29,7 +29,7 @@ class UsersController extends controller
             $status = addslashes($_POST['status']);
 
             $users = new UsersModels();
-            if ($users->add($nome, $cpf, $email, $email, $situacao, $status)) {
+            if ($users->add($nome, $cpf, $email, $situacao, $status)) {
                 header("Location: " . BASE_URL);
             } else {
                 header("Location: " . BASE_URL . 'users/add?error=exist');
@@ -56,7 +56,7 @@ class UsersController extends controller
                 $situacao = addslashes($_POST['situacao']);
                 $status = addslashes($_POST['status']);
 
-                $users->edit($nome, $cpf, $email, $email, $situacao, $status, $id);
+                $users->edit($nome, $cpf, $email, $situacao, $status, $id);
             } else {
                 $dados['info'] = $users->get($id);
 

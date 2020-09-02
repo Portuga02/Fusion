@@ -6,6 +6,10 @@
     border-radius: 3px;
 	text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
+
 
 body {
     font-size: 13px;
@@ -13,6 +17,8 @@ body {
 
 table {
     font-size: 14px;
+    text-decoration: none;
+}
 }
 
 #botoesBaixo {
